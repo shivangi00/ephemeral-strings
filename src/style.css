@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    
+    background-color: rgba(253, 224, 238, 0.904);
+}
+
+nav{
+    position: sticky;
+    background-color: #000;
+    width: 100%;
+    height: 12%;
+}
+
+.nav-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 22px 0;
+    list-style-type: none;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    color: rgb(255, 0, 85);
+}
+
+.brand{
+    font-size: medium;
+    padding-top: 0;
+    letter-spacing: 0.07rem;
+    text-transform: uppercase;    
+}
+
+.landing{
+    background-image: url('../med/papercut-colorful-layers-3d-color-texture-background_1035-13964.jpg');
+    background-size: cover;
+    background-blend-mode: soft-light;
+    width: 100%;
+    height: 90vh;
+}
+
+.content{
+    text-align: center;
+    width: 80%;
+    padding-top: 10%;
+    margin: 0 auto;
+}
+
+.content h1{
+    font-size: 100px;
+    padding-bottom: 10px;
+    text-shadow: 0 1px 0 pink, 0 1px 0 pink, 
+        0 4px 0 pink, 0 2px 0 pink, 
+        0 4px 0 pink, 0 4px 0 pink, 
+        0 4px 0 pink, 0 4px 0 pink, 
+        0 4px 0 pink, 0 2px 0 pink, 
+        0 4px 0 pink, 0 2px 0 pink, 
+        10px 20px 20px rgba(161, 161, 161, 0.233); 
+}
+
+.content q{
+    font-size: 40px;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.content h4{
+    font-size: 35px;
+    font-style: oblique;
+    padding-top: 20px;
+    text-shadow: 0 0.5px 0 pink, 0 0.5px 0 pink, 
+        0 0.5px 0 pink, 0 0.5px 0 pink, 
+        0 0.5px 0 pink, 0 0.5px 0 pink, 
+        0 0.5px 0 pink, 0 0.5px 0 pink, 
+        0 0.5px 0 pink, 0 0.5px 0 pink, 
+        0 0.5px 0 pink, 0 0.5px 0 pink, 
+        10px 20px 20px rgba(161, 161, 161, 0.233); 
+}
+
+.blogs{
+    display: block;
+    border: 5px solid #000;
+    width: 60%;
+    margin: 80px auto;
+    padding-top: 20px;
+}
+
+.blog-content p, h1{
+    margin: 20px 20px;
+}
+
+.blog-content h1{
+    font-style: oblique;
+}
+
+button {
+    margin-left: 47%;
+    padding: 5px;
+    background: transparent;
+    text-shadow: 1px 0px 0px #202020;
+    font-family: "Lato", sans-serif;
+    border: 1px solid rgb(194, 33, 33);
+    color: rgb(194, 33, 33);
+}
+
+footer{
+    margin-top: 6%;
+    width: 100%;
+    height: 30vh;
+    background-color: #000;
+    color: rgb(255, 0, 85);
+    text-align: center;
+}
+
+.footer-content{
+    padding: 35px 0;
+}
+
+footer ul{
+    display: flex;
+    width: 30%;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 20px 0;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer ul a{
+    text-decoration: none;
+    color: inherit;
+}
