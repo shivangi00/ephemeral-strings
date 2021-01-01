@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
 }
 
 body{
@@ -136,3 +137,92 @@ footer ul a{
     text-decoration: none;
     color: inherit;
 }
+nav a.hamburger{
+    display: none;
+}
+.dropdown-menu{
+    display: none;
+}
+.links-hidden{
+    display: none;
+}
+@media only screen and (max-width: 576px){
+    body{
+        width: 100%;
+    }
+    .landing{
+        background-size: 100% 100%;
+        background-size: cover;
+        height: 90vh;
+    }
+    .content h1{
+        font-size: 50px;
+        padding-top: 15%;
+        margin-bottom: 15%;
+    }
+    .content q{
+        font-size: 20px;
+        
+    }
+    
+    .content h4{
+        font-size: 17.5px;
+        margin-top: 8%;
+        padding-bottom: 25%;
+    }
+    .brand{
+        font-size: medium;
+        align-self: center;
+        padding-top: 0;
+        padding-left: 0px;
+    }
+    nav{
+        height: min-content;
+    }
+    .nav-menu li{
+        font-size: small;
+    }
+
+    nav li:not(:first-child) {
+        display: none;
+    }
+    nav a.hamburger {   
+        display: block;
+        padding: 12px;    
+    }
+    .hamburger{
+         padding-right: 0;
+    }
+    .dropdown-menu{
+        display: none;
+    }
+    nav.openNav a.hamburger {
+        position: relative;
+    }
+    nav.openNav a {
+        float: none;
+        display: block;
+        text-align: center;
+    }  
+    .links-hidden{
+         padding: 6px;
+    }
+    .blogs{
+        margin-top: 80px;
+        margin-bottom: 0;
+        width: 80%;
+    } 
+    button{
+        margin-top: 10%;
+        margin-bottom: 5%;
+        margin-left: 42%;
+        justify-content: center;
+    }
+}
+nav.openNav div.dropdown-menu {
+    display: block;
+    width: 100%;
+ }
+
+
+
