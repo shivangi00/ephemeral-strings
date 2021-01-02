@@ -112,7 +112,6 @@ font-weight: normal;
 .about-content img{
     width: 20%;
     height: 40vh;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .blogs{
@@ -262,6 +261,7 @@ footer ul a{
 
     #about img{
         padding: 20px;
+        text-align: center;
         width: 70%;
         height: 25vh;
     }
@@ -282,6 +282,9 @@ footer ul a{
         height: 50%;
     }
 
+    footer{
+        margin-top: 16%;
+    }
     footer ul{
         width: 50%;
     }
