@@ -235,11 +235,14 @@ footer ul a{
     }
 
     .content h1{
-        font-size: 55px;
+        font-size: 50px;
+        margin: 0 auto;
     }
 
     .content h4{
-        font-size: 20px;
+        padding-top: 20px;
+        font-size: 18px;
+        letter-spacing: 0.6em;
         color: rgb(238, 238, 238);
     }
     
@@ -253,19 +256,35 @@ footer ul a{
     }
 
     .about-content p{
-        padding: 35px 5px;
-        font-size: 15px;
+        padding: 35px 5px 20px;
+        font-size: 16px;
         text-align: justify;
     }
 
     #about img{
-        width: 55%;
+        width: 58%;
         margin: 0 auto;
     }
     .blogs{
         width: 80%;
     }
 
+    .say-bye{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pizza , .form{
+        width: 100%;
+    }
+
+    .pizza img{
+        height: 50%;
+    }
+
+    footer{
+        margin-top: 90%;
+    }
     footer ul{
         width: 50%;
     }
