@@ -252,11 +252,10 @@ footer ul a{
     }
     .about-content{
         flex-direction: column;
-        padding: 35px;
+        padding: 25px;
     }
 
     .about-content p{
-        padding: 25px 5px 20px;
         font-size: 16px;
         text-align: justify;
     }
@@ -264,6 +263,7 @@ footer ul a{
     #about img{
         padding: 20px;
         width: 70%;
+        height: 25vh;
     }
     .blogs{
         width: 80%;
