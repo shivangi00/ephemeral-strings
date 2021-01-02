@@ -256,14 +256,14 @@ footer ul a{
     }
 
     .about-content p{
-        padding: 35px 5px 20px;
+        padding: 25px 5px 20px;
         font-size: 16px;
         text-align: justify;
     }
 
     #about img{
-        width: 58%;
-        margin: 0 auto;
+        padding: 20px;
+        width: 70%;
     }
     .blogs{
         width: 80%;
@@ -282,9 +282,6 @@ footer ul a{
         height: 50%;
     }
 
-    footer{
-        margin-top: 90%;
-    }
     footer ul{
         width: 50%;
     }
