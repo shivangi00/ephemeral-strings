@@ -230,7 +230,7 @@ footer ul a{
     }
 
     .content{
-        padding-top: 10%;
+        padding-top: 30%;
     }
 
     .content h1{
@@ -251,8 +251,9 @@ footer ul a{
     }
     .about-content{
         flex-direction: column;
-        padding: 25px;
-        justify-content: center;
+        padding: 10px;
+        justify-content: space-evenly;
+        margin: 0 auto;
     }
 
     .about-content p{
@@ -261,8 +262,9 @@ footer ul a{
     }
 
     #about img{
+        padding: 10px;
         width: 70%;
-        height: 25vh;
+        height: 30vh;
     }
     .blogs{
         width: 80%;
@@ -271,7 +273,7 @@ footer ul a{
     .say-bye{
         display: flex;
         flex-direction: column;
-        margin: 5% auto;
+        margin: 10% auto;
     }
 
     .pizza , .form{
