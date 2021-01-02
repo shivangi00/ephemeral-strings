@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="src/style.css">
   </head>
   <body>
-      
+    
     <nav>
         <ul class="nav-menu">
-            <a href="#" class="brand">Ephemeral Strings</a>
-            <li><a href="#">About</a></li>
+            <a href="#" class="brand font">Ephemeral Strings</a>
+            <li><a href="#about">About</a></li>
             <li><a href="#Blogs">Blogs</a></li>
             <li><a href="#connect">Connect</a></li>
         </ul>
@@ -23,13 +25,25 @@
         <div class="landing">
             <div class="content">
                 <h1>Ephemeral Strings</h1>
-                <q>Life is short. Art and Experiences aren't!</q><br>
-                <h4>-by Shivangi Malik</h4>
+                <h4>- Shivangi Malik</h4>
             </div>
         </div>
     </header>
-    <main>
-        <div class="blogs" id="Blogs">
+
+    <main id="about">
+      <div class="about-content">
+        <img src="med/me.jpg" alt="me">
+        <p>
+          <span class="font">'Ephemeral Strings'</span> is a reminder of how each of us is interwined together in this short journey of life. 
+          And the year 2020 had been a reflection of the same. <br> In here I would share my experiences, 
+          my journey and my learnings with all of you, thus covering an unbounded range.  
+          A small step towards doing my bit, hesitant yet thrilled!
+        </p>
+      </div>
+    </main>
+    
+    <article id="Blogs">
+        <div class="blogs">
             <div class="blog-content">
                 <h1>A Look Back at 2020...</h1>
                 <p>
@@ -49,7 +63,7 @@
                     Earlier this year, I did a course on Web Development which got me my first internship at <i>Raahee- a mental health startup</i> led by my favourite seniors at college. My happiness had no bounds.
                     There wasn't any stipend for it but that wasn't the important part even. The idea of being mentored by my seniors was more exciting to me. And I must say that throughout the internship I gained confidence, built real things, experimented, did mistakes and learnt from them.
                     This experience would always remain special to me. It was amidst this internship, I applied for a part time instructor at a company <i>(no, not WhiteHat Jr.)</i>. Yeah right! Most of you criticize how it is unfair to teach kids coding at the age when they should be playing outdoor etc. Well, I don't totally agree with this.
-                    I got selected as an instructor for Game Development (and later App Development) and on my very first day I was teaching a kid from Australia. And at the end of it, when he was so happy with the project he had built, I knew I had done my job right. Ever since, I have taught more than 100 students and it enthralls me 
+                    I got selected as an instructor for Game Development (and later App Development) and on my very first day I was teaching a kid from Australia. And at the end of it, when he was so happy with the project he had built, I knew I had done my job right. <span id="continue">...</span><button onclick="readMorefunc()" id="btn">Continue Reading</button><span id="more"><br> Ever since, I have taught more than 100 students and it enthralls me 
                     when they build their own games/ apps and show it to me and we work on projects outside the curriculum. Some of the students would even share about what they learnt in school, the states they live in and their culture. Teaching coding to kids gave me a new perspective to it. We as, college students find it difficult to adapt to the concepts of loops, functions, 
                     classes, etc, especially when we aren't familiar with it. Think about how a kid would see these things, you have to match up to their level, make them relate to it by giving examples or designing games yourself. They astonish me by their consistency and their eagerness to learn about everything they can see on the screen.
                     For them, this is not their career, they take it as a hobby and just flare at it, so effortlessly. Learning has to be fun else it is nothing but memorizing lessons for exams. And this doesn't work in real life.
@@ -73,15 +87,34 @@
                     <br><br>
                     I cannot guarantee that 2021 will be a better year, but if we carry our lessons of 2020 forward, it sure won't be bad enough. And this time, atleast we are all prepared.
                     <br><br>
-                    <span class="sign-off">Love,<br> Shivangi &#x2764;</span>
+                    <span class="sign-off">Love,<br> Shivangi &#x2764;</span></span>
                 </p>
+                
             </div>
         </div>
-        <button id="clickme" onclick="clickCounter()"><span>&#x2764;</span> Love it </button>
-        
+        <!--
+          <button id="clickme" onclick="clickCounter()"><span>&#x2764;</span> Like </button>-->
+    </article>
     
-    </main>
-    
+    <div class="say-bye">
+      <div class="form">
+        <form action="/action_page.php">
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" placeholder="John"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" placeholder="Doe"><br><br>
+          <label for="message">Your Message:</label><br>
+          <input type="text" id="message" name="message"><br><br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      <div class="pizza">
+        <img src="med/pizza-18.gif" alt="">
+        <h3>Make me happy, the way pizza makes you!</h3>
+        <div class="fb-like" data-href="https://shivangi00.github.io/ephemeral-strings/" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="false"></div>
+      </div>
+    </div>
+
     <footer id="connect">
         <div class="footer-content">
             <p>Connect with me</p>
@@ -97,18 +130,34 @@
         
     </footer>
     <script>
-  
+      /*function clickCounter() {
+        if (typeof(Storage) !== "undefined") {
+          if (localStorage.clickcount) {
+            localStorage.clickcount = Number(localStorage.clickcount)+1;
+          } else {
+            localStorage.clickcount = Math.floor((Math.random() * 100) + 1);;
+          }
+          document.getElementById("clickme").innerHTML = "<span>&#x2764;</span> You and " + localStorage.clickcount + " others";
+        }
+      }*/
 
-function clickCounter() {
-  if (typeof(Storage) !== "undefined") {
-    if (localStorage.clickcount) {
-      localStorage.clickcount = Number(localStorage.clickcount)+1;
-    } else {
-      localStorage.clickcount = 1;
-    }
-    document.getElementById("clickme").innerHTML = "<span>&#x2764;</span> Love it :" + localStorage.clickcount;
-  }
-}
+      function readMorefunc() {
+        var dots = document.getElementById('continue');
+        var More = document.getElementById('more');
+        var btnText = document.getElementById('btn');
+
+        if(dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Continue Reasding"
+          More.style.display = "none";
+        } else{
+          dots.style.display = "none";
+          btnText.innerHTML = "";
+          More.style.display = "inline";
+        }
+      }
     </script>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v9.0&appId=1278293215896462&autoLogAppEvents=1" nonce="unGUPTh7"></script>
   </body>
 </html>

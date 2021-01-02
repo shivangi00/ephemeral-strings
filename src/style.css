@@ -1,16 +1,20 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body{
-    
-    background-color: rgba(253, 224, 238, 0.904);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffff;
+}
+
+.font{
+    font-family: 'playball';
+    letter-spacing: 0.2em;
 }
 
 nav{
-    position: sticky;
+    position: fixed;
     background-color: #000;
     width: 100%;
     height: 12%;
@@ -24,27 +28,35 @@ nav{
     list-style-type: none;
 }
 
-.nav-menu a{
+.nav-menu a:not(.brand){
     text-decoration: none;
-    color: rgb(255, 0, 85);
+    color: #fff;
 }
 
 .brand{
-    font-size: medium;
-    padding-top: 0;
-    letter-spacing: 0.07rem;
-    text-transform: uppercase;    
+    text-decoration: none;
+    color: rgb(255, 208, 0);
+    font-family: 'playball';
+    letter-spacing: 0.3em;
+    font-size: 22px;
+}
+
+.nav-menu a:hover{
+    color: rgb(255, 0, 85);
 }
 
 .landing{
-    background-image: url('../med/papercut-colorful-layers-3d-color-texture-background_1035-13964.jpg');
+    padding-top: 60px;
+    background-image: url('../med/photo-1486870591958-9b9d0d1dda99\ \(1\).jpg');
+    background-repeat: no-repeat;
     background-size: cover;
-    background-blend-mode: soft-light;
     width: 100%;
-    height: 90vh;
+    height: 102vh;
 }
 
 .content{
+    letter-spacing: 1em;
+    font-family: 'playball';
     text-align: center;
     width: 80%;
     padding-top: 10%;
@@ -53,41 +65,61 @@ nav{
 
 .content h1{
     font-size: 100px;
-    padding-bottom: 10px;
-    text-shadow: 0 1px 0 pink, 0 1px 0 pink, 
-        0 4px 0 pink, 0 2px 0 pink, 
-        0 4px 0 pink, 0 4px 0 pink, 
-        0 4px 0 pink, 0 4px 0 pink, 
-        0 4px 0 pink, 0 2px 0 pink, 
-        0 4px 0 pink, 0 2px 0 pink, 
+    padding-top: 100px;
+    color: #fff;
+    text-shadow: 0 1px 0 rgb(58, 58, 58), 0 1px 0 rgb(58, 58, 58), 
+        0 4px 0 rgb(58, 58, 58), 0 2px 0 rgb(58, 58, 58), 
+        0 4px 0 rgb(58, 58, 58), 0 4px 0 rgb(58, 58, 58), 
+        0 4px 0 rgb(58, 58, 58), 0 4px 0 rgb(58, 58, 58), 
+        0 4px 0 rgb(58, 58, 58), 0 2px 0 rgb(58, 58, 58), 
+        0 4px 0 rgb(58, 58, 58), 0 2px 0 rgb(58, 58, 58), 
         10px 20px 20px rgba(161, 161, 161, 0.233); 
 }
 
-.content q{
-    font-size: 40px;
-    font-style: oblique;
-    font-weight: bold;
-}
 
 .content h4{
-    font-size: 35px;
+    justify-self: flex-end;
+    color: #fff;
     font-style: oblique;
-    padding-top: 20px;
-    text-shadow: 0 0.5px 0 pink, 0 0.5px 0 pink, 
-        0 0.5px 0 pink, 0 0.5px 0 pink, 
-        0 0.5px 0 pink, 0 0.5px 0 pink, 
-        0 0.5px 0 pink, 0 0.5px 0 pink, 
-        0 0.5px 0 pink, 0 0.5px 0 pink, 
-        0 0.5px 0 pink, 0 0.5px 0 pink, 
-        10px 20px 20px rgba(161, 161, 161, 0.233); 
+font-size: 23px;
+font-weight: normal;
+}
+
+#about{
+    margin: 7% auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 65vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.about-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 70px;
+}
+
+.about-content p{
+    align-self: center;
+    padding: 0 50px;
+    color: #616161;
+    text-align: justify;
+}
+
+.about-content img{
+    width: 20%;
+    height: 40vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .blogs{
     display: block;
     border: 5px solid #000;
     width: 60%;
-    margin: 80px auto;
-    padding-top: 20px;
+    margin: 13% auto 5%;
 }
 
 .blog-content p, h1{
@@ -98,22 +130,75 @@ nav{
     font-style: oblique;
 }
 
+#more{
+    display: none;
+}
+
+.like .fb-like{
+    display: flex;
+    justify-content: center;
+}
 button {
-    margin-left: 47%;
-    padding: 5px;
+    margin: 0 auto;
+    padding: 5px 8px;
     background: transparent;
-    text-shadow: 1px 0px 0px #202020;
+    text-shadow: 0.5px 0px 0px #202020;
     font-family: "Lato", sans-serif;
     border: 1px solid rgb(194, 33, 33);
     color: rgb(194, 33, 33);
 }
 
+
+#btn{
+    margin: 0 auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.say-bye{
+    display: flex;
+    flex-direction: row;
+    margin: 8% 0 -6%;
+    height: 90vh;
+    border-top: 1px solid rgb(255, 208, 0);
+}
+
+.form{
+    width: 50%;    
+    justify-content: flex-start;
+}
+
+form{
+    text-align: left;
+    padding: 28% 15%;
+}
+
+.pizza{
+    text-align: center;
+    width: 50%;
+    color: #000;
+    background-color: rgb(255, 208, 0);
+}
+
+.pizza img{
+    width: 99%;
+    height: 60%;
+}
+
+.pizza h3{
+    padding: 50px 20px;
+}
 footer{
     margin-top: 6%;
     width: 100%;
     height: 30vh;
     background-color: #000;
-    color: rgb(255, 0, 85);
+    color: rgb(255, 208, 0);
     text-align: center;
 }
 
@@ -135,4 +220,53 @@ footer ul{
 footer ul a{
     text-decoration: none;
     color: inherit;
+}
+
+@media only screen and (max-width: 600px){
+    .brand{
+        font-size: medium;
+    }
+    .landing{
+        height: 90vh;
+    }
+
+    .content{
+        padding-top: 10%;
+    }
+
+    .content h1{
+        font-size: 55px;
+    }
+
+    .content h4{
+        font-size: 20px;
+        color: rgb(238, 238, 238);
+    }
+    
+    #about{
+        height: 90vh;
+        margin: 20% auto;
+    }
+    .about-content{
+        flex-direction: column;
+        padding: 35px;
+    }
+
+    .about-content p{
+        padding: 35px 5px;
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    #about img{
+        width: 55%;
+        margin: 0 auto;
+    }
+    .blogs{
+        width: 80%;
+    }
+
+    footer ul{
+        width: 50%;
+    }
 }
