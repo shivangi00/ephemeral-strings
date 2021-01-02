@@ -252,6 +252,7 @@ footer ul a{
     .about-content{
         flex-direction: column;
         padding: 25px;
+        justify-content: center;
     }
 
     .about-content p{
@@ -260,8 +261,6 @@ footer ul a{
     }
 
     #about img{
-        padding: 20px;
-        text-align: center;
         width: 70%;
         height: 25vh;
     }
@@ -272,6 +271,7 @@ footer ul a{
     .say-bye{
         display: flex;
         flex-direction: column;
+        margin: 5% auto;
     }
 
     .pizza , .form{
@@ -282,9 +282,6 @@ footer ul a{
         height: 50%;
     }
 
-    footer{
-        margin-top: 16%;
-    }
     footer ul{
         width: 50%;
     }
