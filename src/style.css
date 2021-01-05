@@ -12,7 +12,13 @@ body{
     font-family: 'playball';
     letter-spacing: 0.2em;
 }
+<<<<<<< HEAD
 /*======================NAVBAR===============================*/
+=======
+
+/*======================NAVBAR===============================*/
+
+>>>>>>> 5f5d4f0db5d70d3d569e90cb87b7f846f0c47b68
 nav{
     position: fixed;
     background-color: #000;
@@ -57,7 +63,13 @@ nav a.hamburger{
 .links-hidden{
     display: none;
 }
+<<<<<<< HEAD
 /*=======================LANDING==========================*/
+=======
+
+/*=======================LANDING==========================*/
+
+>>>>>>> 5f5d4f0db5d70d3d569e90cb87b7f846f0c47b68
 .landing{
     padding-top: 60px;
     background-image: url('../med/photo-1486870591958-9b9d0d1dda99\ \(1\).jpg');
@@ -97,7 +109,13 @@ nav a.hamburger{
 font-size: 23px;
 font-weight: normal;
 }
+<<<<<<< HEAD
 /*=====================ABOUT==========================*/
+=======
+
+/*=====================ABOUT==========================*/
+
+>>>>>>> 5f5d4f0db5d70d3d569e90cb87b7f846f0c47b68
 #about{
     margin: 7% auto;
     width: 80%;
@@ -126,7 +144,13 @@ font-weight: normal;
     width: 20%;
     height: 40vh;
 }
+<<<<<<< HEAD
 /*========================BLOGS==========================*/
+=======
+
+/*========================BLOGS==========================*/
+
+>>>>>>> 5f5d4f0db5d70d3d569e90cb87b7f846f0c47b68
 .blogs{
     display: block;
     border: 5px solid #000;
@@ -150,6 +174,7 @@ font-weight: normal;
     display: flex;
     justify-content: center;
 }
+
 button {
     margin: 0 auto;
     padding: 5px 8px;
@@ -159,7 +184,6 @@ button {
     border: 1px solid rgb(194, 33, 33);
     color: rgb(194, 33, 33);
 }
-
 
 #btn{
     margin: 0 auto;
@@ -171,7 +195,13 @@ button {
 button:hover{
     cursor: pointer;
 }
+<<<<<<< HEAD
 /*==============================Sign Up FORM========================*/
+=======
+
+/*==============================Sign Up FORM========================*/
+
+>>>>>>> 5f5d4f0db5d70d3d569e90cb87b7f846f0c47b68
 .say-bye{
     display: flex;
     flex-direction: row;
@@ -189,6 +219,10 @@ button:hover{
     padding: 10% 18% 5%;
     width: 80%;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5f5d4f0db5d70d3d569e90cb87b7f846f0c47b68
 .form-container h2{
     margin: 0 0 40px;
 }
@@ -196,6 +230,67 @@ button:hover{
 .form-container input{
     padding: 10px 0;
     margin-bottom: 30px;
+<<<<<<< HEAD
+=======
+}
+
+.form-container textarea{
+    height: 80px;
+    padding: 10px 0;
+    margin-bottom: 40px;
+}
+
+.form-container input, textarea{
+    width: 70%;
+    box-sizing: border-box;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #999;
+}
+
+.form-container textarea{
+    margin-bottom: 20px;
+}
+
+.form-container input[type="submit"]{
+    border-bottom: none;
+    cursor: pointer;
+    background-color: rgb(255, 208, 0);
+    color: #000;
+    width: 25%;
+}
+
+.form-container form div{
+    position: relative;
+}
+
+.form-container form div label{
+    position: absolute;
+    bottom: 40px;
+    font-size: 14px;
+    pointer-events: none;
+    left: 0;
+    color: #999;
+    transition: .5s;
+}
+
+.form-container input:focus ~label,
+.form-container textarea:focus ~label,
+.form-container input:valid ~label,
+.form-container textarea:valid ~label{
+    top: -12px;
+    font-size: 12px;
+    color: rgb(255, 208, 0);
+    left: 0;
+}
+
+.form-container input:focus,
+.form-container textarea:focus,
+.form-container input:valid,
+.form-container textarea:valid{
+    border-bottom: 2px solid rgb(255, 208, 0);
+>>>>>>> 5f5d4f0db5d70d3d569e90cb87b7f846f0c47b68
 }
 
 .form-container textarea{
@@ -270,6 +365,9 @@ button:hover{
 .pizza h3{
     padding: 50px 20px;
 }
+
+/*========================FOOTER=========================*/
+
 footer{
     margin-top: 6%;
     width: 100%;
@@ -301,7 +399,10 @@ footer ul a{
 
 /*=============TEST STYLE NAV===============*/
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5f5d4f0db5d70d3d569e90cb87b7f846f0c47b68
 @media only screen and (max-width: 600px){
     nav{
         height: min-content;
@@ -363,7 +464,8 @@ footer ul a{
         margin: 0 auto;
         margin-top: 20%;
     }
-    .about-content{
+
+   .about-content{
         flex-direction: column;
         padding: 10px;
         margin: 0 auto;
@@ -381,6 +483,7 @@ footer ul a{
         width: 56%;
         height: 40vh;
     }
+    
     .blogs{
         width: 80%;
     }

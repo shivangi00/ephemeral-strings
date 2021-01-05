@@ -28,7 +28,11 @@
       <a class="hamburger">☰</a>
 
     </ul>
+<<<<<<< HEAD
   </nav>
+=======
+   </nav>
+>>>>>>> 5f5d4f0db5d70d3d569e90cb87b7f846f0c47b68
 
     <header id="header">
         <div class="landing">
@@ -194,6 +198,7 @@
          return( true );
       }
       //hamburger dropdown
+<<<<<<< HEAD
     var x = document.getElementsByTagName("nav")[0];
     function toggleNav() {
       if (x.className === "") {
@@ -205,6 +210,19 @@
     document.querySelector(".hamburger").addEventListener("click", toggleNav);
 
 </script>
+=======
+      var x = document.getElementsByTagName("nav")[0];
+      function toggleNav() {
+        if (x.className === "") {
+          x.className = " openNav";
+        } else {
+          x.className = "";
+        }
+      }
+      document.querySelector(".hamburger").addEventListener("click", toggleNav);
+</script>
+
+>>>>>>> 5f5d4f0db5d70d3d569e90cb87b7f846f0c47b68
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v9.0&appId=1278293215896462&autoLogAppEvents=1" nonce="unGUPTh7"></script>
   </body>
