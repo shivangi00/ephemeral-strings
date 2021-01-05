@@ -179,13 +179,9 @@ button {
 button:hover{
     cursor: pointer;
 }
-<<<<<<< HEAD
-/*==============================Sign Up FORM========================*/
-=======
 
 /*==============================Sign Up FORM========================*/
 
->>>>>>> 5f5d4f0db5d70d3d569e90cb87b7f846f0c47b68
 .say-bye{
     display: flex;
     flex-direction: row;
