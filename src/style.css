@@ -12,13 +12,9 @@ body{
     font-family: 'playball';
     letter-spacing: 0.2em;
 }
-<<<<<<< HEAD
-/*======================NAVBAR===============================*/
-=======
 
 /*======================NAVBAR===============================*/
 
->>>>>>> 5f5d4f0db5d70d3d569e90cb87b7f846f0c47b68
 nav{
     position: fixed;
     background-color: #000;
@@ -63,13 +59,9 @@ nav a.hamburger{
 .links-hidden{
     display: none;
 }
-<<<<<<< HEAD
-/*=======================LANDING==========================*/
-=======
 
 /*=======================LANDING==========================*/
 
->>>>>>> 5f5d4f0db5d70d3d569e90cb87b7f846f0c47b68
 .landing{
     padding-top: 60px;
     background-image: url('../med/photo-1486870591958-9b9d0d1dda99\ \(1\).jpg');
@@ -109,13 +101,9 @@ nav a.hamburger{
 font-size: 23px;
 font-weight: normal;
 }
-<<<<<<< HEAD
-/*=====================ABOUT==========================*/
-=======
 
 /*=====================ABOUT==========================*/
 
->>>>>>> 5f5d4f0db5d70d3d569e90cb87b7f846f0c47b68
 #about{
     margin: 7% auto;
     width: 80%;
@@ -144,13 +132,9 @@ font-weight: normal;
     width: 20%;
     height: 40vh;
 }
-<<<<<<< HEAD
-/*========================BLOGS==========================*/
-=======
 
 /*========================BLOGS==========================*/
 
->>>>>>> 5f5d4f0db5d70d3d569e90cb87b7f846f0c47b68
 .blogs{
     display: block;
     border: 5px solid #000;
@@ -219,10 +203,6 @@ button:hover{
     padding: 10% 18% 5%;
     width: 80%;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 5f5d4f0db5d70d3d569e90cb87b7f846f0c47b68
 .form-container h2{
     margin: 0 0 40px;
 }
@@ -230,8 +210,6 @@ button:hover{
 .form-container input{
     padding: 10px 0;
     margin-bottom: 30px;
-<<<<<<< HEAD
-=======
 }
 
 .form-container textarea{
@@ -290,7 +268,6 @@ button:hover{
 .form-container input:valid,
 .form-container textarea:valid{
     border-bottom: 2px solid rgb(255, 208, 0);
->>>>>>> 5f5d4f0db5d70d3d569e90cb87b7f846f0c47b68
 }
 
 .form-container textarea{
@@ -399,10 +376,6 @@ footer ul a{
 
 /*=============TEST STYLE NAV===============*/
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 5f5d4f0db5d70d3d569e90cb87b7f846f0c47b68
 @media only screen and (max-width: 600px){
     nav{
         height: min-content;
