@@ -1,20 +1,26 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-sizing: border-box;
 }
 
 body{
-    
-    background-color: rgba(253, 224, 238, 0.904);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffff;
 }
 
+.font{
+    font-family: 'playball';
+    letter-spacing: 0.2em;
+}
+
+/*======================NAVBAR===============================*/
+
 nav{
-    position: sticky;
+    position: fixed;
     background-color: #000;
     width: 100%;
     height: 12%;
+    z-index: 1;
 }
 
 .nav-menu{
@@ -25,27 +31,49 @@ nav{
     list-style-type: none;
 }
 
-.nav-menu a{
+.nav-menu a:not(.brand){
     text-decoration: none;
-    color: rgb(255, 0, 85);
+    color: #fff;
 }
 
 .brand{
-    font-size: medium;
-    padding-top: 0;
-    letter-spacing: 0.07rem;
-    text-transform: uppercase;    
+    text-decoration: none;
+    color: rgb(255, 208, 0);
+    font-family: 'playball';
+    letter-spacing: 0.3em;
+    font-size: 22px;
 }
 
+.nav-menu a:hover{
+    color: rgb(255, 0, 85);
+}
+
+nav a.hamburger{
+    display: none;
+}
+
+.dropdown-menu{
+    display: none;
+}
+
+.links-hidden{
+    display: none;
+}
+
+/*=======================LANDING==========================*/
+
 .landing{
-    background-image: url('../med/papercut-colorful-layers-3d-color-texture-background_1035-13964.jpg');
+    padding-top: 60px;
+    background-image: url('../med/photo-1486870591958-9b9d0d1dda99\ \(1\).jpg');
+    background-repeat: no-repeat;
     background-size: cover;
-    background-blend-mode: soft-light;
     width: 100%;
-    height: 90vh;
+    height: 102vh;
 }
 
 .content{
+    letter-spacing: 1em;
+    font-family: 'playball';
     text-align: center;
     width: 80%;
     padding-top: 10%;
@@ -54,41 +82,64 @@ nav{
 
 .content h1{
     font-size: 100px;
-    padding-bottom: 10px;
-    text-shadow: 0 1px 0 pink, 0 1px 0 pink, 
-        0 4px 0 pink, 0 2px 0 pink, 
-        0 4px 0 pink, 0 4px 0 pink, 
-        0 4px 0 pink, 0 4px 0 pink, 
-        0 4px 0 pink, 0 2px 0 pink, 
-        0 4px 0 pink, 0 2px 0 pink, 
+    padding-top: 100px;
+    color: #fff;
+    text-shadow: 0 1px 0 rgb(58, 58, 58), 0 1px 0 rgb(58, 58, 58), 
+        0 4px 0 rgb(58, 58, 58), 0 2px 0 rgb(58, 58, 58), 
+        0 4px 0 rgb(58, 58, 58), 0 4px 0 rgb(58, 58, 58), 
+        0 4px 0 rgb(58, 58, 58), 0 4px 0 rgb(58, 58, 58), 
+        0 4px 0 rgb(58, 58, 58), 0 2px 0 rgb(58, 58, 58), 
+        0 4px 0 rgb(58, 58, 58), 0 2px 0 rgb(58, 58, 58), 
         10px 20px 20px rgba(161, 161, 161, 0.233); 
 }
 
-.content q{
-    font-size: 40px;
-    font-style: oblique;
-    font-weight: bold;
-}
 
 .content h4{
-    font-size: 35px;
+    justify-self: flex-end;
+    color: #fff;
     font-style: oblique;
-    padding-top: 20px;
-    text-shadow: 0 0.5px 0 pink, 0 0.5px 0 pink, 
-        0 0.5px 0 pink, 0 0.5px 0 pink, 
-        0 0.5px 0 pink, 0 0.5px 0 pink, 
-        0 0.5px 0 pink, 0 0.5px 0 pink, 
-        0 0.5px 0 pink, 0 0.5px 0 pink, 
-        0 0.5px 0 pink, 0 0.5px 0 pink, 
-        10px 20px 20px rgba(161, 161, 161, 0.233); 
+font-size: 23px;
+font-weight: normal;
 }
+
+/*=====================ABOUT==========================*/
+
+#about{
+    margin: 7% auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 65vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.about-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 70px;
+}
+
+.about-content p{
+    align-self: center;
+    padding: 0 50px;
+    color: #616161;
+    text-align: justify;
+}
+
+.about-content img{
+    width: 20%;
+    height: 40vh;
+}
+
+/*========================BLOGS==========================*/
 
 .blogs{
     display: block;
     border: 5px solid #000;
     width: 60%;
-    margin: 80px auto;
-    padding-top: 20px;
+    margin: 13% auto 5%;
 }
 
 .blog-content p, h1{
@@ -99,22 +150,147 @@ nav{
     font-style: oblique;
 }
 
+#more{
+    display: none;
+}
+
+.like .fb-like{
+    display: flex;
+    justify-content: center;
+}
+
 button {
-    margin-left: 47%;
-    padding: 5px;
+    margin: 0 auto;
+    padding: 5px 8px;
     background: transparent;
-    text-shadow: 1px 0px 0px #202020;
+    text-shadow: 0.5px 0px 0px #202020;
     font-family: "Lato", sans-serif;
     border: 1px solid rgb(194, 33, 33);
     color: rgb(194, 33, 33);
 }
+
+#btn{
+    margin: 0 auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+/*==============================Sign Up FORM========================*/
+
+.say-bye{
+    display: flex;
+    flex-direction: row;
+    margin: 8% 0 -6%;
+    height: 90vh;
+    border-top: 1px solid rgb(255, 208, 0);
+}
+
+.form{
+    width: 50%;
+    justify-content: flex-start;
+}
+
+.form-container{
+    padding: 10% 18% 5%;
+    width: 80%;
+}
+
+.form-container h2{
+    margin: 0 0 40px;
+}
+
+.form-container input{
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+.form-container textarea{
+    height: 80px;
+    padding: 10px 0;
+    margin-bottom: 40px;
+}
+
+.form-container input, textarea{
+    width: 70%;
+    box-sizing: border-box;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #999;
+}
+
+.form-container textarea{
+    margin-bottom: 20px;
+}
+
+.form-container input[type="submit"]{
+    border-bottom: none;
+    cursor: pointer;
+    background-color: rgb(255, 208, 0);
+    color: #000;
+    width: 25%;
+}
+
+.form-container form div{
+    position: relative;
+}
+
+.form-container form div label{
+    position: absolute;
+    bottom: 40px;
+    font-size: 14px;
+    pointer-events: none;
+    left: 0;
+    color: #999;
+    transition: .5s;
+}
+
+.form-container input:focus ~label,
+.form-container textarea:focus ~label,
+.form-container input:valid ~label,
+.form-container textarea:valid ~label{
+    top: -12px;
+    font-size: 12px;
+    color: rgb(255, 208, 0);
+    left: 0;
+}
+
+.form-container input:focus,
+.form-container textarea:focus,
+.form-container input:valid,
+.form-container textarea:valid{
+    border-bottom: 2px solid rgb(255, 208, 0);
+}
+
+.pizza{
+    text-align: center;
+    width: 50%;
+    color: #000;
+    background-color: rgb(255, 208, 0);
+}
+
+.pizza img{
+    width: 99%;
+    height: 60%;
+}
+
+.pizza h3{
+    padding: 50px 20px;
+}
+
+/*========================FOOTER=========================*/
 
 footer{
     margin-top: 6%;
     width: 100%;
     height: 30vh;
     background-color: #000;
-    color: rgb(255, 0, 85);
+    color: rgb(255, 208, 0);
     text-align: center;
 }
 
@@ -137,48 +313,14 @@ footer ul a{
     text-decoration: none;
     color: inherit;
 }
-nav a.hamburger{
-    display: none;
-}
-.dropdown-menu{
-    display: none;
-}
-.links-hidden{
-    display: none;
-}
-@media only screen and (max-width: 576px){
-    body{
-        width: 100%;
-    }
-    .landing{
-        background-size: 100% 100%;
-        background-size: cover;
-        height: 90vh;
-    }
-    .content h1{
-        font-size: 50px;
-        padding-top: 15%;
-        margin-bottom: 15%;
-    }
-    .content q{
-        font-size: 20px;
-        
-    }
-    
-    .content h4{
-        font-size: 17.5px;
-        margin-top: 8%;
-        padding-bottom: 25%;
-    }
-    .brand{
-        font-size: medium;
-        align-self: center;
-        padding-top: 0;
-        padding-left: 0px;
-    }
+
+/*=============TEST STYLE NAV===============*/
+
+@media only screen and (max-width: 600px){
     nav{
         height: min-content;
     }
+
     .nav-menu li{
         font-size: small;
     }
@@ -186,13 +328,11 @@ nav a.hamburger{
     nav li:not(:first-child) {
         display: none;
     }
+    
     nav a.hamburger {   
         display: block;
-        padding: 12px;    
     }
-    .hamburger{
-         padding-right: 0;
-    }
+    
     .dropdown-menu{
         display: none;
     }
@@ -207,22 +347,90 @@ nav a.hamburger{
     .links-hidden{
          padding: 6px;
     }
-    .blogs{
-        margin-top: 80px;
-        margin-bottom: 0;
-        width: 80%;
-    } 
-    button{
-        margin-top: 10%;
-        margin-bottom: 5%;
-        margin-left: 42%;
-        justify-content: center;
+
+    .brand{
+        font-size: medium;
     }
+    .landing{
+        height: 95vh;
+        width: 100%;
+    }
+
+    .content{
+        padding-top: 20%;
+    }
+
+    .content h1{
+        font-size: 50px;
+        margin: 0 auto;
+    }
+
+    .content h4{
+        padding-top: 20px;
+        font-size: 18px;
+        letter-spacing: 0.6em;
+        color: rgb(238, 238, 238);
+    }
+    
+    #about{
+        height: 100vh;
+        margin: 0 auto;
+        margin-top: 20%;
+    }
+
+   .about-content{
+        flex-direction: column;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .about-content p{
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    #about img{
+        padding: 20px;
+        text-align: center;
+        padding-left: 75px;
+        width: 56%;
+        height: 40vh;
+    }
+    
+    .blogs{
+        width: 80%;
+    }
+
+    .say-bye{
+        display: flex;
+        flex-direction: column;
+        margin: 30% auto;
+        margin-bottom: 0;
+    }
+
+    .pizza , .form{
+        width: 100%;
+    }
+
+    .pizza img{
+        height: 50%;
+    }
+    
+    footer ul{
+        width: 50%;
+    }
+
+    footer{
+        margin-top: 60%;
+        padding-top: 50%;
+    }
+    
+    .footer-content{
+        padding: 25px 0;
+    }
+    
 }
 nav.openNav div.dropdown-menu {
     display: block;
     width: 100%;
- }
-
-
-
+}
