@@ -11,15 +11,24 @@
     <link rel="stylesheet" type="text/css" href="src/style.css">
   </head>
   <body>
-    
-    <nav>
-        <ul class="nav-menu">
-            <a href="#" class="brand font">Ephemeral Strings</a>
-            <li><a href="#about">About</a></li>
-            <li><a href="#Blogs">Blogs</a></li>
-            <li><a href="#connect">Connect</a></li>
-        </ul>
-    </nav>
+        
+  <nav>
+    <ul class="nav-menu">
+      <a href="#" class="brand">Ephemeral Strings</a>
+      <li><a href="#about" class="menuitems">About</a></li>
+      <li><a href="#Blogs" class="menuitems">Blogs</a></li>
+      <li><a href="#connect" class="menuitems">Connect</a></li>
+      <div class="dropdown-menu">
+        
+        <a class="links-hidden" href="#">About</a>
+        <a class="links-hidden" href="#Blogs">Blogs</a>
+        <a class="links-hidden" href="#connect">Connect</a>
+        
+      </div>
+      <a class="hamburger">☰</a>
+
+    </ul>
+  </nav>
 
     <header id="header">
         <div class="landing">
@@ -98,15 +107,28 @@
     
     <div class="say-bye">
       <div class="form">
-        <form action="/action_page.php">
-          <label for="fname">First name:</label><br>
-          <input type="text" id="fname" name="fname" placeholder="John"><br>
-          <label for="lname">Last name:</label><br>
-          <input type="text" id="lname" name="lname" placeholder="Doe"><br><br>
-          <label for="message">Your Message:</label><br>
-          <input type="text" id="message" name="message"><br><br>
-          <input type="submit" value="Submit">
-        </form>
+        <div class="form-container">
+          <h2>Contact Us</h2>
+          <form action="mailto:shivangimalik@gmail.com" method="post" enctype="text/plain" name="myForm" onsubmit="return(validateEmail());">
+            <div class="input-data">
+              <input type="text" id="fname" name="fname" required>
+              <label for="fname">First name</label><br>
+            </div>
+            <div class="input-data">
+              <input type="text" id="lname" name="lname" required>
+              <label for="lname">Last name</label><br>
+            </div>
+            <div class="input-data">
+              <input type="text" id="email" name="email" required>
+              <label for="email">Email address</label><br>
+            </div>
+            <div class="input-data">
+              <textarea type="text" id="message" name="message" required></textarea>
+              <label for="message">Your Message</label>
+            </div>
+            <input type="submit" value="SEND">
+          </form>
+        </div>
       </div>
       <div class="pizza">
         <img src="med/pizza-18.gif" alt="">
@@ -141,6 +163,7 @@
         }
       }*/
 
+      //read more 
       function readMorefunc() {
         var dots = document.getElementById('continue');
         var More = document.getElementById('more');
@@ -156,7 +179,32 @@
           More.style.display = "inline";
         }
       }
-    </script>
+
+      //Email validation function
+      function validateEmail() {
+         var emailID = document.myForm.email.value;
+         atpos = emailID.indexOf("@");
+         dotpos = emailID.lastIndexOf(".");
+         
+         if (atpos < 1 || ( dotpos - atpos < 2 )) {
+            alert("Please enter correct email ID")
+            document.myForm.email.focus() ;
+            return false;
+         }
+         return( true );
+      }
+      //hamburger dropdown
+    var x = document.getElementsByTagName("nav")[0];
+    function toggleNav() {
+      if (x.className === "") {
+        x.className = " openNav";
+      } else {
+        x.className = "";
+      }
+    }
+    document.querySelector(".hamburger").addEventListener("click", toggleNav);
+
+</script>
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v9.0&appId=1278293215896462&autoLogAppEvents=1" nonce="unGUPTh7"></script>
   </body>
