@@ -201,70 +201,118 @@ nav{
         10px 20px 20px rgba(161, 161, 161, 0.233); 
 }
 
-
-.content h4{
-    justify-self: flex-end;
-    color: #fff;
-    font-style: oblique;
-font-size: 23px;
-font-weight: normal;
-}
-
-/*=====================ABOUT==========================*/
-
-main{
-    margin: 8% auto;
-    width: 80%;
+.buttons{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+}
+
+.btn{
+    text-decoration: none;
+    color: inherit;
+    margin: 5% auto;
+    padding: 18px 35px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.918);
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.918);
+    letter-spacing: 0.3rem;
+}
+
+.buttons button:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.836);
+    color: #000000;
+    transition: 0.4s;
+}
+/*========================BLOGS==========================*/
+.blog{
+    margin: 5% auto;
+}
+
+.blog h2{
+    font-family: 'playball';
+    font-size: 35px;
+    letter-spacing: 0.2em;
+    margin: 0 1%;
+    text-align: center;
+}
+
+.blog hr{
+    margin: 1% auto 3%;
+    width: 40%;
+}
+.row{
+    display: flex;
     flex-wrap: wrap;
 }
 
-.about-content p{
-    align-self: center;
-    padding: 0 10%;
-    color: #616161;
-    text-align: justify;
-    font-size: 23px;
-}
-
-.quote-open, .quote-close{
-    font-size: 100px;
-}
-
-.quote-close{
-    float: right;
-}
-
-/*====================WHAT-WE-GOT=========================*/
-
-.row {
-    display: flex;
-    flex-direction: row;
-}
-
-.column {
+.column{
     padding: 5px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 60%;
-    max-width: 60%;
+    flex: 33%;
+    max-width: 33%;
 }
 
-.column-img {
-    padding: 5px 0;
+#more{
+    display: none;
+}
+
+#btn {
+    margin: 2% 42.5%;
+    padding: 15px 33px;
+    font-size: medium;
+    letter-spacing: 0.15em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*Hover Image effect*/
+.col-img{
+    position: relative;
+    width: 400px;
+}
+
+.img{
+    display: block;
+    width: 100%;
+}
+
+.overlay-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    flex: 40%;
-    max-width: 40%;
+    opacity: 0;
 }
 
-.column-img img{
-    width: 50%;
+.overlay-img:hover{
+    opacity: 1;
+    transition: all 0.4s ease-in-out 0s;
 }
 
+.overlay-title{
+    padding: 6% 5% 1%;
+    text-align: left;
+    font-size: 1.7em;
+    font-style: italic;
+    letter-spacing: 0.1em;
+}
+
+.overlay-text{
+    padding: 0 5%;
+    text-align: left;
+    font-size: 1.25em;
+}
+
+.date{
+    font-size: 0.65em;
+}
 /*==============================Sign Up FORM========================*/
 
 .say-bye{
@@ -455,91 +503,19 @@ footer ul a{
     color: inherit;
 }
 
-/*=============TEST STYLE NAV===============*/
-
-@media only screen and (max-width: 600px){
-    body{
-        overflow-x: hidden;
-    }
-    .brand{
-        font-size: medium;
-    }
-    .landing{
-        height: 95vh;
-        width: 100%;
-    }
-
-    .content{
-        padding-top: 20%;
-    }
-
-    .content h1{
-        font-size: 50px;
-        margin: 0 auto;
-    }
-
-    .content h4{
-        padding-top: 20px;
-        font-size: 18px;
-        letter-spacing: 0.6em;
-        color: rgb(238, 238, 238);
-    }
+@media screen and (max-width: 600px) {
     
-    #about{
-        height: 100vh;
-        margin: 0 auto;
-        margin-top: 20%;
+    .column{
+        max-width: 100%;
+        flex: 100%;
+        
     }
 
-   .about-content{
+    #btn {
+        margin: 3% 30%;
+    }
+
+    .buttons {
         flex-direction: column;
-        padding: 10px;
-        margin: 0 auto;
     }
-
-    .about-content p{
-        font-size: 16px;
-        text-align: justify;
-    }
-
-    #about img{
-        padding: 20px;
-        text-align: center;
-        padding-left: 75px;
-        width: 56%;
-        height: 40vh;
-    }
-    
-    .blogs{
-        width: 80%;
-    }
-
-    .say-bye{
-        display: flex;
-        flex-direction: column;
-        margin: 30% auto;
-        margin-bottom: 0;
-    }
-
-    .pizza , .form{
-        width: 100%;
-    }
-
-    .pizza img{
-        height: 50%;
-    }
-    
-    footer ul{
-        width: 50%;
-    }
-
-    footer{
-        margin-top: 60%;
-        padding-top: 50%;
-    }
-    
-    .footer-content{
-        padding: 25px 0;
-    }
-    
 }
